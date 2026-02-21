@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Commentary Box – Live Cricket Scores & Updates</title>
+  <meta name="description"
+    content="Commentary Box is the ultimate cricket companion app for iOS. Track live scores with dynamic Live Activities, Apple Watch SmartStack, and CarPlay support." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="nav-inner container">
+      <a href="/" class="nav-logo" aria-label="Commentary Box home">
+        <img src="/assets/logo.svg" alt="Commentary Box logo" class="logo-img" />
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#features">Features</a>
+        <a href="#platforms">Platforms</a>
+        <a href="#download" class="btn-nav">Download</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#features">Features</a>
+      <a href="#platforms">Platforms</a>
+      <a href="#download">Download</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-gradient"></div>
+      <div class="hero-grid"></div>
+    </div>
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          <span>Now Available on iOS & Android</span>
+        </div>
+        <h1 class="hero-title">Cricket knows no <span class="gradient-text">boundaries.</span></h1>
+        <p class="hero-subtitle">
+          Stay locked in on every match with live scores surfaced right where you are —
+          on your lock screen, wrist, or dashboard. Commentary Box is built for cricket fans who refuse to miss a
+          moment.
+        </p>
+        <div class="hero-actions" style="flex-wrap: wrap;">
+          <a href="https://apps.apple.com" id="hero-download-btn" class="btn btn-primary" target="_blank"
+            rel="noopener">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
+            </svg>
+            App Store
+          </a>
+          <a href="https://play.google.com" id="hero-play-btn" class="btn btn-primary" target="_blank" rel="noopener">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.54 20.5,12.46 20.16,13.19L17.89,16.2L15.39,13.7L17.89,11.2L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" />
+            </svg>
+            Google Play
+          </a>
+          <a href="#features" class="btn btn-ghost">
+            Explore Features
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+        <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: -40px; margin-bottom: 48px;">*Ad free
+          access and Live Activities are premium paid features</p>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number">Live</span>
+            <span class="stat-label">Scores</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number">iOS & Android</span>
+            <span class="stat-label">Supported</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number">Free</span>
+            <span class="stat-label">To Download</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-glow"></div>
+        <img src="/assets/hero.svg" alt="Commentary Box app illustration" class="hero-svg" />
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What makes us different</span>
+        <h2 class="section-title">Designed for cricket. <br />Built for your device.</h2>
+        <p class="section-subtitle">Every feature is crafted to keep you connected to the game in the most seamless way
+          possible without ever opening the app.</p>
+      </div>
+
+      <div class="features-grid">
+
+        <div class="feature-card feature-card--hero" id="feature-live">
+          <div class="feature-card-glow"></div>
+          <div class="feature-icon-wrap">
+            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="3" />
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" stroke-dasharray="4 2" />
+              <path d="M12 8v4l3 3" />
+            </svg>
+            <div class="feature-icon-ring"></div>
+          </div>
+          <h3>Live Activity</h3>
+          <p>Catch real time score updates right on your iPhone Lock Screen and Dynamic Island always visible, never
+            intrusive.</p>
+          <div class="feature-tag">Dynamic Island</div>
+        </div>
+
+        <div class="feature-card" id="feature-watch">
+          <div class="feature-card-glow feature-card-glow--cyan"></div>
+          <div class="feature-icon-wrap">
+            <svg class="feature-icon feature-icon--cyan" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="1.5">
+              <rect x="6" y="2" width="12" height="20" rx="3" />
+              <circle cx="12" cy="18" r="1" fill="currentColor" />
+              <path d="M9 6h6M9 9h4" />
+            </svg>
+          </div>
+          <h3>Apple Watch SmartStack</h3>
+          <p>Glance at scores on your wrist with a beautiful SmartStack widget cricket at a flick of the wrist.</p>
+          <div class="feature-tag feature-tag--cyan">watchOS</div>
+        </div>
+
+        <div class="feature-card" id="feature-carplay">
+          <div class="feature-card-glow feature-card-glow--cyan"></div>
+          <div class="feature-icon-wrap">
+            <svg class="feature-icon feature-icon--cyan" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="1.5">
+              <rect x="2" y="7" width="20" height="12" rx="2" />
+              <path d="M6 7V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2" />
+              <circle cx="8" cy="17" r="1" fill="currentColor" />
+              <circle cx="16" cy="17" r="1" fill="currentColor" />
+            </svg>
+          </div>
+          <h3>CarPlay Support</h3>
+          <p>Follow the match on your car's display with full CarPlay integration keep your eyes on the road and the
+            score.</p>
+          <div class="feature-tag feature-tag--cyan">CarPlay</div>
+        </div>
+
+        <div class="feature-card" id="feature-design">
+          <div class="feature-icon-wrap">
+            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="4" />
+              <path
+                d="M12 2v2M12 20v2M2 12h2M20 12h2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+            </svg>
+          </div>
+          <h3>Minimalistic Design</h3>
+          <p>A clean, distraction free interface that puts cricket front and centre. No clutter, just the scores you
+            need.</p>
+          <div class="feature-tag">Native App</div>
+        </div>
+
+        <div class="feature-card" id="feature-tournaments">
+          <div class="feature-icon-wrap">
+            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M8 21h8M12 17v4M12 3L2 9l10 6 10-6-10-6z" />
+              <path d="M2 17l10 6 10-6" />
+              <path d="M2 13l10 6 10-6" />
+            </svg>
+          </div>
+          <h3>All Tournaments</h3>
+          <p>Track international matches, domestic leagues, and all major cricket events from around the world in one
+            place.</p>
+          <div class="feature-tag">Global Cricket</div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PLATFORMS -->
+  <section class="platforms" id="platforms">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Multi platform</span>
+        <h2 class="section-title">Everywhere you are.</h2>
+        <p class="section-subtitle">Commentary Box meets you at every screen, keeping you updated no matter where you
+          are.</p>
+      </div>
+      <div class="platforms-grid">
+        <div class="platform-card" id="platform-iphone">
+          <div class="platform-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="5" y="2" width="14" height="20" rx="3" />
+              <circle cx="12" cy="18" r="1" fill="currentColor" />
+              <path d="M9 6h6" />
+            </svg>
+          </div>
+          <h3>iPhone</h3>
+          <p>Full app experience with Live Activities on the Dynamic Island and Lock Screen.</p>
+          <ul class="platform-list">
+            <li>Live Activity on Lock Screen</li>
+            <li>Dynamic Island support</li>
+            <li>iOS 16+ compatible</li>
+          </ul>
+        </div>
+        <div class="platform-card" id="platform-watch">
+          <div class="platform-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="6" y="2" width="12" height="20" rx="3" />
+              <circle cx="12" cy="18" r="1" fill="currentColor" />
+              <path d="M9 6h6M9 9h4" />
+            </svg>
+          </div>
+          <h3>Apple Watch</h3>
+          <p>SmartStack widget for quick score checks without lifting your phone.</p>
+          <ul class="platform-list">
+            <li>SmartStack widget</li>
+            <li>watchOS companion</li>
+            <li>Glanceable scores</li>
+          </ul>
+        </div>
+        <div class="platform-card" id="platform-carplay">
+          <div class="platform-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="7" width="20" height="12" rx="2" />
+              <path d="M6 7V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2" />
+              <circle cx="8" cy="17" r="1" fill="currentColor" />
+              <circle cx="16" cy="17" r="1" fill="currentColor" />
+            </svg>
+          </div>
+          <h3>CarPlay</h3>
+          <p>Safe, eyes free score monitoring while driving designed with safety in mind.</p>
+          <ul class="platform-list">
+            <li>Full CarPlay support</li>
+            <li>Hands-free scores</li>
+            <li>Large, readable UI</li>
+          </ul>
+        </div>
+        <div class="platform-card" id="platform-android">
+          <div class="platform-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" stroke-dasharray="4 2" />
+              <path d="M12 8v4l3 3" />
+            </svg>
+          </div>
+          <h3>Android</h3>
+          <p>The premium cricket experience for Android devices, designed carefully.</p>
+          <ul class="platform-list">
+            <li>Native widgets</li>
+            <li>System-wide notifications</li>
+            <li>Clean Material UI</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOWNLOAD CTA -->
+  <section class="download" id="download">
+    <div class="download-bg">
+      <div class="download-orb download-orb--1"></div>
+      <div class="download-orb download-orb--2"></div>
+    </div>
+    <div class="container download-inner">
+      <div class="download-content">
+        <span class="section-tag">Get started for free</span>
+        <h2 class="download-title">Never miss a delivery.</h2>
+        <p class="download-subtitle">Download Commentary Box today and bring your favourite cricket to every corner of
+          your Apple ecosystem.</p>
+        <div class="cta-actions" style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+          <a href="https://apps.apple.com" id="cta-download-btn" class="btn btn-primary btn-large" target="_blank"
+            rel="noopener">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
+            </svg>
+            App Store
+          </a>
+          <a href="https://play.google.com" id="cta-play-btn" class="btn btn-primary btn-large" target="_blank"
+            rel="noopener">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.54 20.5,12.46 20.16,13.19L17.89,16.2L15.39,13.7L17.89,11.2L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" />
+            </svg>
+            Google Play
+          </a>
+        </div>
+        <p class="download-note">Available for iOS, Android, Apple Watch & CarPlay • Free to download<br>
+          <span style="font-size: 0.8rem; opacity: 0.7; font-style: italic;">(Ad free access and Live Activities are a
+            premium paid feature)</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="/assets/logo.svg" alt="Commentary Box logo" class="footer-logo" />
+        <p class="footer-tagline">Cricket, everywhere you are.</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="/privacy">Privacy Policy</a>
+          <a href="/terms">Terms of Use</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <a href="mailto:atharv.choughule.dev@gmail.com">atharv.choughule.dev@gmail.com</a>
+        </div>
+        <div class="footer-col">
+          <h4>Available On</h4>
+          <a href="https://apps.apple.com" target="_blank" rel="noopener">App Store</a>
+        </div>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2024 Commentary Box. All rights reserved. Cricket only app no ball by ball commentary.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
