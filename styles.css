@@ -820,6 +820,18 @@ ul {
     transform: translateY(-8px) rotate(-45deg);
   }
 
+  .hero-title {
+    font-size: 2.8rem;
+  }
+
+  .section-title {
+    font-size: 2.25rem;
+  }
+
+  .download-title {
+    font-size: 2.5rem;
+  }
+
   .hero-inner {
     grid-template-columns: 1fr;
     text-align: center;
@@ -834,6 +846,11 @@ ul {
   .hero-stats {
     justify-content: center;
     flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .stat-divider {
+    display: none;
   }
 
   .features-grid,
